@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Page title -->
+    <title>LUNA | Responsive Admin Theme</title>
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="vendor/animate.css/animate.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="vendor/toastr/toastr.min.css" />
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="styles/pe-icons/pe-icon-7-stroke.css" />
+    <link rel="stylesheet" href="styles/pe-icons/helper.css" />
+    <link rel="stylesheet" href="styles/stroke-icons/style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      ul > li {
+        padding: 0.5rem 1rem;
+      }
+      ul > li:nth-child(odd) {
+        text-align: right;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body class="blank">
+    <div class="wrapper">
+      <section class="content">
+        <div class="container-fluid md animated slideInDown">
+          <div class="view-header">
+            <div class="header-icon">
+              <i class="pe page-header-icon pe-7s-shield"></i>
+            </div>
+            <div class="header-tile">
+              <h3>Chat con Socket.io</h3>
+              
+            </div>
+          </div>
+          <div class="panel panel-filled">
+            <div class="panel-body">
+              <div class="panel">
+                <div class="panel-heading">Mensajes recibidos</div>
+                <div class="panel-body">
+                  <div class="table-responsive">
+                    <ul class="list-style-type"></ul>
+                    <form action="" id="loginForm" novalidate method="post">
+                      <div class="form-group">
+                        <label class="control-label" for="mensaje"
+                          >Repuesta</label
+                        >
+                        <input
+                          type="text"
+                          placeholder="Ingrese el mensaje..."
+                          title="Please enter your username"
+                          required=""
+                          value=""
+                          name="nuevo-msg"
+                          id="nuevo-msg"
+                          class="form-control"
+                        />
+                        <span class="help-block small">Escriba mensaje</span>
+                      </div>
+                      <div>
+                        <button type="submit" class="btn btn-primary">
+                          Enviar mensaje
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Vendor scripts -->
+    <script src="vendor/pacejs/pace.min.js"></script>
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="scripts/luna.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- Chat scripts -->
+    <script src="./chat.js"></script>
+  </body>
+</html>
